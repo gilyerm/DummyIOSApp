@@ -9,19 +9,31 @@
 /* Begin PBXBuildFile section */
 		818553E52BAC827700476DCD /* DummyAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818553E42BAC827700476DCD /* DummyAppApp.swift */; };
 		818553E72BAC827700476DCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818553E62BAC827700476DCD /* ContentView.swift */; };
-		818553E92BAC827700476DCD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818553E82BAC827700476DCD /* Item.swift */; };
 		818553EB2BAC827800476DCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818553EA2BAC827800476DCD /* Assets.xcassets */; };
-		818553EF2BAC827800476DCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818553EE2BAC827800476DCD /* Preview Assets.xcassets */; };
+		818553F62BAC868500476DCD /* CategoriesOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818553F52BAC868500476DCD /* CategoriesOverviewView.swift */; };
+		818553F82BAC869600476DCD /* CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818553F72BAC869600476DCD /* CategoryCardView.swift */; };
+		818553FA2BAC86A300476DCD /* CategoryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818553F92BAC86A300476DCD /* CategoryDetailsView.swift */; };
+		818553FC2BAC86B700476DCD /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818553FB2BAC86B700476DCD /* ProductRowView.swift */; };
+		818554002BAC899500476DCD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818553FF2BAC899500476DCD /* Product.swift */; };
+		818554022BAC8CDD00476DCD /* CategoriesOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818554012BAC8CDD00476DCD /* CategoriesOverviewViewModel.swift */; };
+		818554042BAC8DFE00476DCD /* DummyAppAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818554032BAC8DFE00476DCD /* DummyAppAPIService.swift */; };
+		818554072BAC962F00476DCD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818554062BAC962F00476DCD /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		818553E12BAC827700476DCD /* DummyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DummyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818553E42BAC827700476DCD /* DummyAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyAppApp.swift; sourceTree = "<group>"; };
 		818553E62BAC827700476DCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		818553E82BAC827700476DCD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		818553EA2BAC827800476DCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		818553EC2BAC827800476DCD /* DummyApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DummyApp.entitlements; sourceTree = "<group>"; };
-		818553EE2BAC827800476DCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		818553F52BAC868500476DCD /* CategoriesOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesOverviewView.swift; sourceTree = "<group>"; };
+		818553F72BAC869600476DCD /* CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardView.swift; sourceTree = "<group>"; };
+		818553F92BAC86A300476DCD /* CategoryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsView.swift; sourceTree = "<group>"; };
+		818553FB2BAC86B700476DCD /* ProductRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
+		818553FF2BAC899500476DCD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		818554012BAC8CDD00476DCD /* CategoriesOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesOverviewViewModel.swift; sourceTree = "<group>"; };
+		818554032BAC8DFE00476DCD /* DummyAppAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyAppAPIService.swift; sourceTree = "<group>"; };
+		818554062BAC962F00476DCD /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,22 +66,68 @@
 		818553E32BAC827700476DCD /* DummyApp */ = {
 			isa = PBXGroup;
 			children = (
-				818553E42BAC827700476DCD /* DummyAppApp.swift */,
-				818553E62BAC827700476DCD /* ContentView.swift */,
-				818553E82BAC827700476DCD /* Item.swift */,
+				818554102BACAB8500476DCD /* Views */,
+				8185540B2BACA90D00476DCD /* Services */,
+				8185540A2BACA90200476DCD /* Models */,
+				818554092BACA8F900476DCD /* ViewModels */,
 				818553EA2BAC827800476DCD /* Assets.xcassets */,
+				818553E62BAC827700476DCD /* ContentView.swift */,
 				818553EC2BAC827800476DCD /* DummyApp.entitlements */,
-				818553ED2BAC827800476DCD /* Preview Content */,
+				818553E42BAC827700476DCD /* DummyAppApp.swift */,
 			);
 			path = DummyApp;
 			sourceTree = "<group>";
 		};
-		818553ED2BAC827800476DCD /* Preview Content */ = {
+		818554092BACA8F900476DCD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				818553EE2BAC827800476DCD /* Preview Assets.xcassets */,
+				818554012BAC8CDD00476DCD /* CategoriesOverviewViewModel.swift */,
 			);
-			path = "Preview Content";
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8185540A2BACA90200476DCD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				818554062BAC962F00476DCD /* Category.swift */,
+				818553FF2BAC899500476DCD /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8185540B2BACA90D00476DCD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				818554032BAC8DFE00476DCD /* DummyAppAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		818554102BACAB8500476DCD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				818554112BACABD000476DCD /* Categories */,
+				818554122BACABDC00476DCD /* Products */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		818554112BACABD000476DCD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				818553F52BAC868500476DCD /* CategoriesOverviewView.swift */,
+				818553F72BAC869600476DCD /* CategoryCardView.swift */,
+				818553F92BAC86A300476DCD /* CategoryDetailsView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		818554122BACABDC00476DCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				818553FB2BAC86B700476DCD /* ProductRowView.swift */,
+			);
+			path = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +188,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				818553EF2BAC827800476DCD /* Preview Assets.xcassets in Resources */,
 				818553EB2BAC827800476DCD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,9 +199,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				818554022BAC8CDD00476DCD /* CategoriesOverviewViewModel.swift in Sources */,
+				818554072BAC962F00476DCD /* Category.swift in Sources */,
 				818553E72BAC827700476DCD /* ContentView.swift in Sources */,
-				818553E92BAC827700476DCD /* Item.swift in Sources */,
+				818554002BAC899500476DCD /* Product.swift in Sources */,
+				818553F82BAC869600476DCD /* CategoryCardView.swift in Sources */,
+				818553FC2BAC86B700476DCD /* ProductRowView.swift in Sources */,
 				818553E52BAC827700476DCD /* DummyAppApp.swift in Sources */,
+				818553F62BAC868500476DCD /* CategoriesOverviewView.swift in Sources */,
+				818553FA2BAC86A300476DCD /* CategoryDetailsView.swift in Sources */,
+				818554042BAC8DFE00476DCD /* DummyAppAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +337,7 @@
 				CODE_SIGN_ENTITLEMENTS = DummyApp/DummyApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DummyApp/Preview Content\"";
-				DEVELOPMENT_TEAM = DQB4Y66FAP;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -286,8 +349,6 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -296,7 +357,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gilyerm.DummyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,8 +373,7 @@
 				CODE_SIGN_ENTITLEMENTS = DummyApp/DummyApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DummyApp/Preview Content\"";
-				DEVELOPMENT_TEAM = DQB4Y66FAP;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -324,8 +385,6 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -334,7 +393,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gilyerm.DummyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
